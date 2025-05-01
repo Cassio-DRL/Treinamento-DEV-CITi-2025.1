@@ -1,5 +1,5 @@
 # Treinamento DEV CITi 2025.1
-Webpage feita exclusivamente com HTML e CSS
+Webpage sobre Journaling feita exclusivamente com HTML e CSS
 
 ## Index.html
 É o arquivo principal HTML contendo toda a estrutura e texto.
