@@ -1,0 +1,89 @@
+/* body, vai ser a base de tudo, n pretendo mudar fonte entre outros itens não */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #313131;
+    color: #dff9ff;
+    font-family: Arial, sans-serif;
+    font-size:x-large;
+    overflow: hidden;
+}
+
+/* coluna da direita e esquerda com a mesma base */
+.left-column, .right-column {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: #161616;
+    color: #dff9ff;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto; /* autoriza scrolling */
+
+    /* scrollbar delete */
+    scrollbar-width: none;
+}
+
+.left-column {
+    left: 0;
+    border-right: 1px solid #575757;
+}
+
+.right-column {
+    right: 0;
+    border-left: 1px solid #575757;
+}
+
+/* tamanho de fonte menor para descrição dos vídeos*/
+.right-column p {
+    font-size: medium;
+}
+
+/* caixa central com o texto principal */
+.center-box {
+    margin: 0 320px; /* margem manual considerando as laterais */
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto; /* autoriza scrolling */
+    box-sizing: border-box;
+
+    /* scrollbar delete */
+    scrollbar-width: none;
+}
+
+
+.center-box-image { /* estilização das imagens, centraliza e arredonda */
+    max-width: 50%;       
+    height: auto;         
+    display: block;       
+    margin: 30px auto;    
+    border-radius: 8px;   /* arrendonda os cantos das imagens */
+}
+
+.center-box p {
+    margin-bottom: 30px; /* aumenta a margem entre os paragráfos */
+    line-height: 1.6;
+}
+
+.center-box h1, h2, h3 {
+    color: #ffffff;
+}
+
+.left-column a { /* estilização dos links */
+    text-decoration: none; 
+    color: inherit; 
+    display: block; 
+}
+
+/* experimentando com hover */
+.left-column a:hover {
+    color: #cc7400;
+    text-decoration: underline; 
+}
+
+/* estilização do iframe para centralizar os embeds*/
+.right-column iframe {
+    display: block;
+    margin: 20px auto;
+}
